@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= user[0].fullname %>
+    </title>
+    <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='/stylesheets/styleIndex.css' />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="/function/onclicknamefriend.js"></script>
+</head>
+
+<body>
+    <div class="card_chat">
+        <div class="card_chat_status">
+            <a href="">
+                <i class='bx bx-menu'></i>
+            </a>
+            <a class="namefriend" id="namefriend" href="">
+                <label for=""></label>
+            </a>
+
+            <a href="">
+                <i class='bx bx-log-out'></i>
+            </a>
+        </div>
+        <div class="card_chat_message">
+
+        </div>
+        <div class="card_boxchat">
+            <input type="text" name="" id="">
+            <div class="btnSent">
+                <a href="">
+                    <i class='bx bx-send'></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="card_listfriend">
+        <label for="">List your friends</label>
+
+        <% user[0].friend.forEach(friend =>{ %>
+            <form class="formfriend" action="/" method="get">
+                <p id="friend" title="hello">
+                    <%= friend %>
+                </p>
+                <button>Chat</button>
+            </form>
+            <%}) %>
+    </div>
+</body>
+
+</html>

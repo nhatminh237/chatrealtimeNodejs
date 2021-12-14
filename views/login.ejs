@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Điểm hẹn mọi cuộc vui :))</title>
+    <link rel='stylesheet' href='/stylesheets/styleLogin.css' />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css">
+</head>
+
+<body>
+
+    <div class="login_style">
+        <i class="fas fa-sign-out-alt"></i>
+        <div class="card_content_login">
+            <p>You’ll find love if you chat with me !!! </p>
+        </div>
+        <div class="card_login">
+            <p>LOGIN</p>
+            <form class="login" method="post" action="/index">
+                <label for="">Username</label>
+                <input type="text" name="username" id="">
+                <label for="">Password </label>
+                <input type="text" name="password" id="">
+                <button> Enter </button>
+            </form>
+            <div class="card_forget_registration">
+                <h1 onclick="window.location.href='http://localhost:3000/findPassword'" class="lost_pw">Lost password</h1>
+                <h1 onclick="window.location.href='http://localhost:3000/registration'" class="registration">Registration</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

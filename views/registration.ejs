@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <title>
+        <%= admin %>
+    </title>
+    <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css">
+    <link rel='stylesheet' href='/stylesheets/styleRegistration.css' />
+</head>
+
+<body>
+    <Label class="lb_header_content">Registration</Label>
+
+    <div class="card_registration">
+        <form name="fregistration" method="post">
+            <label for="">Fullname :</label>
+            <input name="fullname" type="text" />
+            <label for="">Phone :</label>
+            <input name="phone" type="text" />
+            <label for="">Username :</label>
+            <input name="username" type="text" />
+            <label for="">Password :</label>
+            <input name="password" type="text" />
+            <label>Repassword :</label>
+            <input name="repw" type="text" />
+
+            <div class="btn_registration">
+                <button onclick="window.location.href='http://localhost:3000/'">Back</button>
+                <button>Registration</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
